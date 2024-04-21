@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+         content="width=device-width, initial-scale=1.0">
+      <title>Cadastro - Trilhas Inova</title>
+      <link rel="stylesheet" href="assets/CSS/style.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="imagemFormulario">
+            <img src="assets/images/LogoTrilhasInova.jpg"
+               alt="Logotipo do programa Trilhas Inova">
+         </div>
+         <div class="dadosFormulario">
+            <form action="#">
+               <div class="cabecalhoFormulario">
+                  <div class="tituloFormulario">
+                     <h1>Inscreva-se!</h1>
+                  </div>
+                  <div class="botaoLogin">
+                     <button>
+                        <a href="#">Entrar.</a>
+                     </button>
+                  </div>
+               </div>
+               <div class="grupoInput">
+                  <div class="caixaInput" id="caixaNome">
+                     <label for="nome">Nome Completo:</label>
+                     <input type="text" id="nome" name="nome"
+                        placeholder="Ex. Shikamaru Nara" required>
+                  </div>
+                  <div class="caixaInput" id="caixaCPF">
+                     <label for="cpf">CPF:</label>
+                     <input type="text" id="cpf" name="cpf"
+                        placeholder="Ex. 123.456.789-00" required>
+                  </div>
+                  <div class="caixaInput" id="caixaEmail">
+                     <label for="email">E-mail:</label>
+                     <input type="email" id="email" name="email"
+                        placeholder="Ex. narashikamaru@viladafolha.com"
+                        required>
+                  </div>
+                  <div class="caixaInput" id="caixaTel" >
+                     <label for="telefone">Telefone:</label>
+                     <input type="tel" id="telefone" name="telefone"
+                        placeholder="Ex. (98)98564-5895" required>
+                  </div>
+                  <div class="caixaInput">
+                     <label for="logradouro">Logradouro:</label>
+                     <input type="text" id="logradouro" name="logradouro"
+                        placeholder="Ex. Rua do Shogi" required>
+                  </div>
+                  <div class="caixaInput">
+                     <label for="numeroResidencia">Número:</label>
+                     <input type="text" id="numeroResidencia"
+                        name="numeroResidencia" placeholder="Ex. 04"
+                        required>
+                  </div>
+                  <div class="caixaInput">
+                     <label for="bairro">Bairro:</label>
+                     <input type="tel" id="bairro" name="bairro"
+                        placeholder="Ex. Bosque do Clã Nara" required>
+                  </div>
+                  <div class="caixaInput">
+                     <label for="cidade">Cidade:</label>
+                     <input type="text" id="cidade" name="cidade"
+                        placeholder="Ex. Vila da Folha" required>
+                  </div>
+                  <div class="caixaInput">
+                     <label for="cep">CEP:</label>
+                     <input type="text" id="cep" name="cep"
+                        placeholder="Ex. 65034-548" required>
+                  </div>
+                  <div class="caixaInput">
+                     <label for="senha">Senha:</label>
+                     <input type="password" id="senha" name="senha"
+                        placeholder="Digite sua senha" required>
+                  </div>
+                  <div class="caixaInput">
+                     <label for="confirmaSenha">Confirme Senha:</label>
+                     <input type="password" id="confirmaSenha"
+                        name="confirmaSenha" placeholder="Repita sua senha"
+                        required>
+                  </div>
+                  
+               </div>
+               <div class="outrosInputs">
+                  <div class="inputDataGroup">
+                     <div class="inputTitulo" id="inputDataTitulo">
+                        <h6>Data de Nascimento:</h6>
+                     </div>
+                     <div class="inputOutros" id="inputData">
+                        <input type="date" name="data" required>
+                     </div>
+                  </div>
+                  <div class="inputEscolaridadeGroup">
+                     <div class="inputTitulo" id="inputEscolaridadeTitulo">
+                        <h6>Escolaridade:</h6>
+                     </div>
+                     <div class="inputOutros" id="inputEscolaridade">
+                        <select name="escolaridade" id="escolaridade">
+                           <option value="medioCursando">Ensino Médio
+                              Cursando</option>
+                           <option value="medioCompleto">Ensino Médio
+                              Completo</option>
+                           <option value="superiorCursando">Ensino Superior
+                              Cursando</option>
+                           <option value="superiorCompleto">Ensino Superior
+                              Completo</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div id="doc">
+                     <div class="inputDocIdentificacaoGroup">
+                        <div class="inputTitulo"
+                           id="inputDocIdentificacaoTitulo">
+                           <h6 class="inputDocTitulo">Comprovante de Identificação:</h6>
+                        </div>
+                        <div class="inputOutros" id="inputDocIdentificacao">
+                           <input type="file" class="inputDoc"
+                              name="docIdentificacao"
+                              id="docIdentificacao"
+                              required>
+                           <label class="labelDoc"
+                              for="docIdentificacao"><span></span>
+                              <img class="imagemDoc"
+                                 src="assets/images/upload.svg" alt>
+                              Selecione um documento...
+                           </label>
+                        </div>
+                     </div>
+                     <div class="inputDocResidenciaGroup">
+                        <div class="inputTitulo"
+                           id="inputDocResidenciaTitulo">
+                           <h6 class="inputDocTitulo">Comprovante de Residência:</h6>
+                        </div>
+                        <div class="inputOutros" id="inputDocResidencia">
+                           <input class="inputDoc" type="file"
+                              name="docResidencia" id="docResidencia"
+                              required>
+                           <label class="labelDoc"
+                              for="docResidencia"><span></span>
+                              <img class="imagemDoc"
+                                 src="assets/images/upload.svg" alt>
+                              Selecione um documento...
+                           </label>
+                        </div>
+                     </div>
+                     <div class="inputDocEscolaridadeGroup">
+                        <div class="inputTitulo"
+                           id="inputDocEscolaridadeTitulo">
+                           <h6 class="inputDocTitulo">Comprovante de Escolaridade:</h6>
+                        </div>
+                        <div class="inputOutros" id="inputDocEscolaridade">
+                           <input type="file" class="inputDoc"
+                              name="docEscolaridade"
+                              id="docEscolaridade"
+                              required>
+                           <label class="labelDoc" id="labelDocEscolaridade"
+                              for="docEscolaridade"><span></span>
+                              <img class="imagemDoc"
+                                 src="assets/images/upload.svg" alt>
+                              Selecione um documento...
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="continueButton">
+                  <button>
+                     <a href="#">Realizar Inscrição</a>
+                  </button>
+               </div>
+            </form>
+         </div>
+      </div>
+
+      <script src="assets/JS/script.js"></script>
+   </body>
+</html>
