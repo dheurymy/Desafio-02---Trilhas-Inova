@@ -188,6 +188,7 @@ p {
       font-family: 'Inter', sans-serif;
    }
    .container {
+      margin-top: 3rem;
       width: 800px;
       height: 600px;
       flex-direction: row;
@@ -265,6 +266,34 @@ p {
 
    .formulario {
       width: 590px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+            
+   }
+
+   .header div:last-child {
+      margin-right: 10px;
+   }
+}
+
+@media screen and (min-width: 1400px) {
+   .container {
+     
+      width: 1350px;
+      height: 900px;
+      flex-direction: row;
+   }
+
+   .imagem {
+      width: 500px;
+      height: auto;
+      
+   }
+
+   .formulario {
+      width: 750px;
       height: 500px;
       display: flex;
       justify-content: center;
