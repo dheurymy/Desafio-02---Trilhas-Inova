@@ -9,12 +9,14 @@
 
 body {
    width: 100%;
-   height: 100%;
+   height: 100vh;
    display: flex;
    justify-content: center;
-   align-items: center;
+   align-items: baseline;
    background: #ffc55f;
 }
+
+
 
 .container {
    width: 300px;
@@ -26,6 +28,7 @@ body {
    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
    background-color: #122E72;
    border-radius: 8px;
+   margin-top: 5%;
 }
 
 .imagem {
@@ -57,6 +60,7 @@ h2 {
    font-size: 1rem;
    margin-bottom: 30px;
 }
+
 
 .label-container button {
    font-size: 0.5rem;
@@ -118,8 +122,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-input[type="date"],
-#escolaridade {
+input[type="date"] {
    width: 100%;
    height: 0.5rem;
    padding: 0.5rem;
@@ -131,7 +134,15 @@ input[type="date"],
    background-color: bisque;
 }
 
-input[type="submit"] {
+#mensagemSenha {
+   width: 80%;
+   margin-top: 1rem;
+   font-size: 0.5rem;
+   font-weight: 600;
+   color: #f90404;
+}
+
+#enviarBotao {
    font-size: 0.5rem;
    font-weight: 600;
    background-color: rgba(0, 90, 3, 0.757);
@@ -142,13 +153,37 @@ input[type="submit"] {
    cursor: pointer;
 }
 
-input[type="submit"]:hover {
+#botao:hover {
    background-color: #09ff00; 
 }
 
 
+#escolaridade {
+   width: 100%;
+   height: 1.1rem;
+   
+   margin-bottom: 0.5rem;
+   border: 1px solid #ccc; 
+   border-radius: 5px; 
+   box-sizing: border-box; 
+   font-size: 0.5rem;
+   background-color: bisque;
+   color: black;
 
+   
+}
 
+#botaoMostrarSenha {
+   border: solid 1px #ccc;
+   
+   
+}
+
+#iconeSenha, #iconeConfirmaSenha {
+   height: 1rem;
+   border: solid 1px #ccc;
+   border-radius: 10px;
+}
 input[type="file"] {
    width: 100%;
    height: 1.5rem;
@@ -181,14 +216,9 @@ p {
 
 
 @media screen and (min-width: 830px) {
-   * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-   }
+   
    .container {
-      margin-top: 3rem;
+      
       width: 800px;
       height: 600px;
       flex-direction: row;
@@ -215,6 +245,7 @@ p {
 
    #escolaridade {
       margin-top: 0.2rem;
+      width: 100%;
    }
 
    .input-group {
@@ -246,6 +277,14 @@ p {
    
       
    .bairro-container {
+      width: 50%;
+   }
+
+   .senha-container {
+      width: 50%;
+   }
+
+   .confirma-senha-container {
       width: 50%;
    }
 }
@@ -280,7 +319,7 @@ p {
 
 @media screen and (min-width: 1400px) {
    .container {
-     
+      margin-top: auto;
       width: 1350px;
       height: 900px;
       flex-direction: row;

@@ -76,19 +76,27 @@
                      </select>
                   </div>
                   <div class="senha-container">
-                     <label for="senha">Senha</label>
-                     
+                     <label for="senha">Senha <img src="assets/images/olho7.svg" alt="" id="iconeSenha"></label>
                      <input type="password" id="senha" name="senha"
-                        required>
+                        required autocomplete="off">
+                     
+                     
                         
                   </div>
                   <div class="confirma-senha-container">
-                     <label for="confirmarSenha">Confirme a Senha</label>
+                     <label for="confirmarSenha">Confirme a Senha <img src="assets/images/olho7.svg" alt="" id="iconeConfirmaSenha"></label>
                      <input type="password" id="confirmarSenha"
-                        name="confirmarSenha" required>
+                        name="confirmaSenha" autocomplete="off" required>
                   </div>
 
+                  <div id="alertaSenha">
+                     <p id="mensagemSenha"></p>
+                  </div>
+
+                  
+
                </div>
+               
             </div>
 
             <div class="input-container">
@@ -136,8 +144,11 @@
                   <input type="file" id="docEscolaridade" name="docEscolaridade" required>
                </div>
             </div>
-            <div class="botaoEnviar">
-               <input type="submit" value="Realizar Inscrição">
+            <div class="input-group">
+               <div class="botaoEnviar">
+                  <button id="enviarBotao" type="submit" >Realizar Inscrição</button>
+               </div>
+               
             </div>
          </form>
       </div>
