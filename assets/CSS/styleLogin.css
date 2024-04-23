@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Inter', sans-serif;
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: baseline;
+   background: #ffc55f;
+}
+
+
+
+.container {
+   width: 300px;
+   height: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+   background-color: #122E72;
+   border-radius: 8px;
+   margin-top: 5%;
+}
+
+.imagem {
+   width: 100px;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: aliceblue;
+   padding: 0;
+}
+
+
+.formulario {
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   background-color: #fff;
+   padding: 1rem;
+   border-radius: 8px; 
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+   
+}
+
+h2 {
+   font-size: 1rem;
+   margin-bottom: 30px;
+}
+
+
+.label-container button {
+   font-size: 0.5rem;
+   font-weight: 500;
+   background-color:  #52679d; 
+   color: white;
+   padding: 5px;
+   border: none;
+   border-radius: 5px; 
+   cursor: pointer;
+}
+
+.label-container button:hover {
+   background-color: #45a049; 
+}
+
+.input-container {
+   margin-bottom: 10px;
+}
+label {
+   font-size: 0.6rem;
+   font-weight: 500;
+}
+
+.input-group {
+   display: flex;
+   flex-direction: column;
+}
+
+.input-group > div {
+   
+   margin-right: 10px;
+}
+
+.cpf-container {
+   margin-top: 1rem;
+}
+
+.senha-container {
+   margin-top: 1rem;
+}
+
+.header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header::after {
+   content: '';
+   display: block;
+   width: 6rem;
+   height: 0.3rem;
+   background-color: #122E72;
+   margin: 0 auto;
+   position: absolute;
+   margin-top: 0.5rem;
+   border-radius: 10px;
+}
+
+a {
+   text-decoration: none;
+   color: white;
+   font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"]{
+   width: 100%;
+   height: 0.5rem;
+   padding: 0.5rem;
+   margin-bottom: 0rem;
+   border: 1px solid #ccc; 
+   border-radius: 5px; 
+   box-sizing: border-box; 
+   font-size: 0.5rem;
+   background-color: bisque;
+   
+}
+
+
+#enviarBotao {
+   font-size: 0.5rem;
+   font-weight: 600;
+   background-color: rgba(0, 90, 3, 0.757);
+   color: white;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px; 
+   cursor: pointer;
+   margin-top: 2rem;
+}
+
+#enviarBotao:hover {
+   background-color: #09ff00; 
+   
+}
+
+
+#botaoMostrarSenha {
+   border: solid 1px #ccc;
+   
+   
+}
+
+#iconeSenhaLogin {
+   height: 1rem;
+   border: solid 1px #ccc;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+p {
+   font-size: 0.4rem;
+   font-weight: 600;
+   color: #122E72;
+}
+
+@media screen and (max-width: 600px) {
+   .header::after {
+      margin-top: 2rem;
+   }
+}
+
+@media screen and (min-width: 600px) {
+   .container {
+      width: 410px;
+      height: auto;
+      
+   }
+
+   .formulario {
+      width: 400px;
+      height: auto;      
+   }
+}
+
+
+@media screen and (min-width: 830px) {
+   
+   .container {
+      
+      width: 800px;
+      height: 600px;
+      flex-direction: row;
+   }
+
+   .imagem {
+      width: 200px;
+      height: auto;
+      
+   }
+
+   .formulario {
+      width: 590px;
+      height: 95%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+            
+   }
+
+   .header div:last-child {
+      margin-right: 10px;
+   }
+
+ 
+   .input-group {
+      flex-direction: column;
+   }
+
+   
+   
+   .cpf-container {
+      width: 100%;
+   }
+   
+
+   .senha-container {
+      width: 100%;
+   }
+
+   
+}
+
+@media screen and (min-width: 1000px) {
+   .container {
+     
+      width: 1010px;
+      height: 600px;
+      flex-direction: row;
+   }
+
+   .imagem {
+      width: 400px;
+      height: auto;
+      
+   }
+
+   .formulario {
+      width: 590px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+            
+   }
+
+   .header div:last-child {
+      margin-right: 10px;
+   }
+}
+
+@media screen and (min-width: 1400px) {
+   .container {
+      margin-top: auto;
+      width: 1350px;
+      height: 900px;
+      flex-direction: row;
+   }
+
+   .imagem {
+      width: 500px;
+      height: auto;
+      
+   }
+
+   .formulario {
+      width: 750px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+            
+   }
+
+   .header div:last-child {
+      margin-right: 10px;
+   }
+}

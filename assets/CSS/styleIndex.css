@@ -116,7 +116,11 @@ label {
    border-radius: 10px;
 }
 
-
+a {
+   text-decoration: none;
+   color: white;
+   font-weight: 600;
+}
 
 input[type="text"],
 input[type="password"],
@@ -153,7 +157,7 @@ input[type="date"] {
    cursor: pointer;
 }
 
-#botao:hover {
+#enviarBotao:hover {
    background-color: #09ff00; 
 }
 
@@ -183,6 +187,7 @@ input[type="date"] {
    height: 1rem;
    border: solid 1px #ccc;
    border-radius: 10px;
+   cursor: pointer;
 }
 input[type="file"] {
    width: 100%;
