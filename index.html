@@ -12,7 +12,7 @@
       <div class="container">
          <img src="assets/images/LogoTrilhasInova.jpg" alt="Imagem"
             class="imagem">
-         <form class="formulario" action="#" >
+         <form class="formulario" action="#" id="form">
 
             <div class="header">
                <div>
@@ -63,7 +63,7 @@
                   <div class="input-container">
                      <label for="escolaridade">Escolaridade</label>
                      <select id="escolaridade" name="escolaridade" required>
-                        
+                        <option value="none" >Selecione...</option>
                         <option value="Ensino Médio Cursando">Ensino Médio
                            Cursando</option>
                         <option value="Ensino Médio Completo">Ensino Médio
@@ -145,7 +145,7 @@
             </div>
             <div class="input-group">
                <div class="botaoEnviar">
-                  <button id="enviarBotao" type="submit" >Realizar Inscrição</button>
+                  <button id="enviarBotao" type="submit" ><a href="confirm.html">Realizar Inscrição</a></button>
                </div>
                
             </div>

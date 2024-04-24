@@ -75,3 +75,4 @@ document.getElementById('iconeConfirmaSenha').addEventListener('click', function
    var inputConfirmarSenha = document.getElementById('confirmarSenha');
    alternarVisibilidadeSenha(inputConfirmarSenha);
 });
+
